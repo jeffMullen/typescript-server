@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc"
+    "build": "rm -rf build/ && prettier --write source/ && tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
     "@types/node": "^17.0.19"
   }
 }
